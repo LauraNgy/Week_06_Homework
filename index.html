@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DM's Character Tracker</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <form id="new-char-form">
+      <div class="form-wrapper">
+        <div class="form-input">
+          <label for="charName">New Character Name</label>
+          <input id="charName" type="text" required/>
+        </div>
+        <div class="form-input">
+          <label for="charClass">New Character Class</label>
+          <select id="charClass">
+            <option value="" disabled selected></option>
+            <option value="Barbarian">Barbarian</option>
+            <option value="Bard">Bard</option>
+            <option value="Cleric">Cleric</option>
+            <option value="Druid">Druid</option>
+            <option value="Fighter">Fighter</option>
+            <option value="Monk">Monk</option>
+            <option value="Paladin">Paladin</option>
+            <option value="Ranger">Ranger</option>
+            <option value="Rogue">Rogue</option>
+            <option value="Sorcerer">Sorcerer</option>
+            <option value="Wizard">Wizard</option>
+          </select>
+        </div>
+        <div class="form-input">
+          <label for="charRace">New Character Race</label>
+          <select id="charRace">
+            <option value="" disabled selected></option>
+            <option value="Dragonborn">Dragonborn</option>
+            <option value="Dwarf">Dwarf</option>
+            <option value="Elf">Elf</option>
+            <option value="Gnome">Gnome</option>
+            <option value="Half-elf">Half-elf</option>
+            <option value="Half-orc">Half-orc</option>
+            <option value="Halfling">Halfling</option>
+            <option value="Human">Human</option>
+            <option value="Tiefling">Tiefling</option>
+          </select>
+        </div>
+        <div class="form-input">
+            <legend>Player Status</legend>
+            <label for="charActive">Playing</label>
+            <input type="radio" class="charStatus" name="status" checked/>
+            <label for="charDisabled">Not Playing</label>
+            <input type="radio" class="charStatus" name="status"/>
+        </div>
+      </div>
+      <input type="submit" value="Add new player"/>
+    </form>
+    <h1 id="content-title">Your Players</h1>
+    <div id="player-list">
+    </div>
+    <button id="delete-button">Delete all players</button>
+  </body>
+</html>
